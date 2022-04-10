@@ -25,7 +25,6 @@ final <- filt_data %>% full_join (activity_label, by = "ID") %>%
   
 #tiding the names
 normalized_names <- f[filt_ids]
-normalized_names <- gsub("\\(\\)", "", normalized_names)
 normalized_names <- gsub("Mag", "-Magnitude", normalized_names)
 normalized_names <- gsub("Gyro", "-Gyroscope", normalized_names)
 normalized_names <- gsub("Acc", "-Accelerometer", normalized_names)
