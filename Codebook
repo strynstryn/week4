@@ -1,0 +1,16 @@
+Codebook
+In this codebook is short overview from output script analysis.r.
+
+During the process some of measurements (not all) were cleaned up:
+normalized_names <- gsub("\\(\\)", "", normalized_names)
+normalized_names <- gsub("Mag", "-Magnitude", normalized_names)
+normalized_names <- gsub("Gyro", "-Gyroscope", normalized_names)
+normalized_names <- gsub("Acc", "-Accelerometer", normalized_names)
+
+Variables
+In this data set were used those variables:
+
+subject - participants
+activity - type of activity
+measure - collected measurements
+mean - mean of measurements
